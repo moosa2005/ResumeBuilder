@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-/L4xN0j7K5vYh6c8Dq5f2dJz7j2J3k8q6K7b6n5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J5c5q5J......" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-file-alt"></i> Professional Resume Builder</h1>
+            <p>Create a polished, professional resume in minutes. Fill in your details, choose a template, and download instantly.</p>
+        </header>
+        <div class="main-content">
+            <section class="form-section">
+                <h2><i class="fas fa-user-edit"></i> Your Information</h2>
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-signature"></i> Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" />
+                </div>
+                <div class="form-group">
+                    <label for="title"><i class="fas fa-briefcase"></i> Professional Title</label>
+                    <input type="text" id="title" placeholder="Software Engineer" />
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="email" placeholder="john.doe@example.com" />
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                    <input type="tel" id="phone" placeholder="(123) 456-7890" />
+                </div>
+                <div class="form-group">
+                    <label for="location"><i class="fas fa-map-marker-alt"></i> Location</label>
+                    <input type="text" id="location" placeholder="New York, NY" />
+                </div>
+                <div class="form-group">
+                    <label for="summary"><i class="fas fa-file-contract"></i> Professional Summary</label>
+                    <textarea id="summary" maxlength="300" placeholder="Experienced professional with a proven track record in..."></textarea>
+                    <div class="char-count"><span id="summary-count">0</span>/300</div>
+                    <div class="progress-bar"><div class="progress" id="summary-progress"></div></div>
+                </div>
+                <div class="form-group">
+                    <label for="experience"><i class="fas fa-building"></i> Work Experience</label>
+                    <textarea id="experience" placeholder="Company A - Senior Developer (2020–2022) - Led a team of 5 developers...
+Company B - Junior Developer (2018–2020) - Developed web applications using React..."></textarea>
+                    <small>Enter each experience on a new line in format: Company - Position (Dates) - Description</small>
+                </div>
+                <div class="form-group">
+                    <label for="education"><i class="fas fa-graduation-cap"></i> Education</label>
+                    <textarea id="education" placeholder="University A - Bachelor of Science in Computer Science (2014–2018)
+University B - Certificate in Web Development (2018)"></textarea>
+                    <small>Enter each education item on a new line in format: Institution - Degree (Dates)</small>
+                </div>
+                <div class="form-group">
+                    <label for="skills"><i class="fas fa-tools"></i> Skills</label>
+                    <textarea id="skills" placeholder="JavaScript, React, Node.js, Python, Project Management"></textarea>
+                    <small>Separate skills with commas</small>
+                </div>
+                <h3><i class="fas fa-palette"></i> Select Template</h3>
+                <div class="template-selection">
+                    <div class="template-btn active" data-template="modern">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Modern</span>
+                    </div>
+                    <div class="template-btn" data-template="classic">
+                        <i class="fas fa-feather-alt"></i>
+                        <span>Classic</span>
+                    </div>
+                    <div class="template-btn" data-template="executive">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Executive</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button id="update-btn">
+                        <i class="fas fa-sync-alt"></i> Update Resume
+                    </button>
+                </div>
+            </section>
+            <section class="preview-section">
+                <div class="preview-header">
+                    <h2><i class="fas fa-eye"></i> Resume Preview</h2>
+                    <div class="preview-actions">
+                        <button class="print-btn" id="print-btn">
+                            <i class="fas fa-print"></i> Print
+                        </button>
+                        <button class="download-btn" id="download-btn">
+                            <i class="fas fa-download"></i> PDF
+                        </button>
+                    </div>
+                </div>
+                <div class="preview-content" id="resume-preview">
+                    <!-- Resume will be generated here -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="toast" id="toast">Resume updated successfully!</div>
+    <script src="script.js"></script>
+</body>
+</html>
