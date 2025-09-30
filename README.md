@@ -28,9 +28,3 @@ The generated resume can be **downloaded as a PDF** with just one click.
 3. Instantly preview your resume.  
 4. Click **Download PDF** to save your resume locally.  
 
----
-
-## 📥 Installation & Usage  
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/moosa2005/ResumeBuilder.git
