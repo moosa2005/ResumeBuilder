@@ -1,5 +1,5 @@
 
-Resume Builder
+#Resume Builder
 
 A simple and interactive Resume Builder built with HTML, CSS, and JavaScript.
 Users can input their personal and professional details, which are automatically filled into a clean resume template.
@@ -7,7 +7,7 @@ The generated resume can be downloaded as a PDF with just one click.
 
 
 
-🚀 Features
+#🚀 Features
 
 User-friendly form for entering details (Name, Education, Skills, Experience, etc.)
 
@@ -21,8 +21,7 @@ Clean UI with responsive design
 
 
 
-
-🛠️ Technologies Used
+#🛠️ Technologies Used
 
 HTML5 – Structure
 
@@ -33,7 +32,7 @@ JavaScript (Vanilla JS) – Dynamic form handling & PDF generation
 
 
 
-⚙️ How It Works
+#⚙️ How It Works
 
 1. Open the project in your browser.
 
@@ -51,7 +50,7 @@ JavaScript (Vanilla JS) – Dynamic form handling & PDF generation
 
 ---
 
-📥 Installation & Usage
+#📥 Installation & Usage
 
 1. Clone this repository:
 
@@ -66,7 +65,7 @@ git clone https://github.com/moosa2005/ResumeBuilder.git
 
 
 
-###🤝 Contributing
+#🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to fork the repo and submit a pull request.
